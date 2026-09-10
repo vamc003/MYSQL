@@ -1,1 +1,41 @@
+# Python Virtual Environment
+
+.venv/
+venv/
+env/
+
+# Environment Variables / Secrets
+
+.env
+
+# Python Cache
+
+**pycache**/
+*.py[cod]
+
+# VS Code
+
+.vscode/
+
+# Python Build / Packaging
+
+build/
+dist/
+*.egg-info/
+
+# Test / Coverage
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+
+*.log
+
+# OS Generated Files
+
+.DS_Store
+Thumbs.db
+desktop.ini
 
