@@ -1,0 +1,20 @@
+CREATE TABLE `employees` (
+  `employee_id` int NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `email` varchar(150) NOT NULL,
+  `phone` varchar(20) DEFAULT NULL,
+  `gender` enum('Male','Female','Other') NOT NULL,
+  `date_of_birth` date DEFAULT NULL,
+  `hire_date` date NOT NULL,
+  `job_title` varchar(100) NOT NULL,
+  `department_id` int NOT NULL,
+  `employment_status` enum('Active','Inactive','On Leave') DEFAULT 'Active',
+  `salary` decimal(12,2) NOT NULL,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`employee_id`),
+  UNIQUE KEY `uk_employee_email` (`email`),
+  KEY `fk_employee_department` (`department_id`),
+  CONSTRAINT `fk_employee_department` FOREIGN KEY (`department_id`) REFERENCES `departments` (`department_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

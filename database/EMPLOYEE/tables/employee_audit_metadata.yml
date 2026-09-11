@@ -1,0 +1,31 @@
+table: employee_audit
+description: ""
+columns:
+  - name: audit_id
+    type: int
+    nullable: "NO"
+    default: null
+    key: PRI
+    extra: auto_increment
+    description: ""
+  - name: employee_id
+    type: int
+    nullable: "YES"
+    default: null
+    key: ""
+    extra: ""
+    description: ""
+  - name: action_type
+    type: varchar(50)
+    nullable: "YES"
+    default: null
+    key: ""
+    extra: ""
+    description: ""
+  - name: action_timestamp
+    type: timestamp
+    nullable: "YES"
+    default: CURRENT_TIMESTAMP
+    key: ""
+    extra: DEFAULT_GENERATED
+    description: ""

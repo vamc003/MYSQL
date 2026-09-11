@@ -1,0 +1,101 @@
+table: employees
+description: ""
+columns:
+  - name: employee_id
+    type: int
+    nullable: "NO"
+    default: null
+    key: PRI
+    extra: auto_increment
+    description: ""
+  - name: first_name
+    type: varchar(50)
+    nullable: "NO"
+    default: null
+    key: ""
+    extra: ""
+    description: ""
+  - name: last_name
+    type: varchar(50)
+    nullable: "NO"
+    default: null
+    key: ""
+    extra: ""
+    description: ""
+  - name: email
+    type: varchar(150)
+    nullable: "NO"
+    default: null
+    key: UNI
+    extra: ""
+    description: ""
+  - name: phone
+    type: varchar(20)
+    nullable: "YES"
+    default: null
+    key: ""
+    extra: ""
+    description: ""
+  - name: gender
+    type: "enum('Male','Female','Other')"
+    nullable: "NO"
+    default: null
+    key: ""
+    extra: ""
+    description: ""
+  - name: date_of_birth
+    type: date
+    nullable: "YES"
+    default: null
+    key: ""
+    extra: ""
+    description: ""
+  - name: hire_date
+    type: date
+    nullable: "NO"
+    default: null
+    key: ""
+    extra: ""
+    description: ""
+  - name: job_title
+    type: varchar(100)
+    nullable: "NO"
+    default: null
+    key: ""
+    extra: ""
+    description: ""
+  - name: department_id
+    type: int
+    nullable: "NO"
+    default: null
+    key: MUL
+    extra: ""
+    description: ""
+  - name: employment_status
+    type: "enum('Active','Inactive','On Leave')"
+    nullable: "YES"
+    default: Active
+    key: ""
+    extra: ""
+    description: ""
+  - name: salary
+    type: "decimal(12,2)"
+    nullable: "NO"
+    default: null
+    key: ""
+    extra: ""
+    description: ""
+  - name: created_at
+    type: timestamp
+    nullable: "YES"
+    default: CURRENT_TIMESTAMP
+    key: ""
+    extra: DEFAULT_GENERATED
+    description: ""
+  - name: updated_at
+    type: timestamp
+    nullable: "YES"
+    default: CURRENT_TIMESTAMP
+    key: ""
+    extra: DEFAULT_GENERATED on update CURRENT_TIMESTAMP
+    description: ""

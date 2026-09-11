@@ -1,0 +1,52 @@
+table: employee_projects
+description: ""
+columns:
+  - name: project_id
+    type: int
+    nullable: "NO"
+    default: null
+    key: PRI
+    extra: auto_increment
+    description: ""
+  - name: employee_id
+    type: int
+    nullable: "NO"
+    default: null
+    key: MUL
+    extra: ""
+    description: ""
+  - name: project_name
+    type: varchar(150)
+    nullable: "NO"
+    default: null
+    key: ""
+    extra: ""
+    description: ""
+  - name: project_role
+    type: varchar(100)
+    nullable: "YES"
+    default: null
+    key: ""
+    extra: ""
+    description: ""
+  - name: start_date
+    type: date
+    nullable: "YES"
+    default: null
+    key: ""
+    extra: ""
+    description: ""
+  - name: end_date
+    type: date
+    nullable: "YES"
+    default: null
+    key: ""
+    extra: ""
+    description: ""
+  - name: project_status
+    type: "enum('Planned','Active','Completed')"
+    nullable: "YES"
+    default: Active
+    key: ""
+    extra: ""
+    description: ""

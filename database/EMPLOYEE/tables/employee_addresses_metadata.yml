@@ -1,0 +1,59 @@
+table: employee_addresses
+description: ""
+columns:
+  - name: address_id
+    type: int
+    nullable: "NO"
+    default: null
+    key: PRI
+    extra: auto_increment
+    description: ""
+  - name: employee_id
+    type: int
+    nullable: "NO"
+    default: null
+    key: MUL
+    extra: ""
+    description: ""
+  - name: address_line1
+    type: varchar(200)
+    nullable: "NO"
+    default: null
+    key: ""
+    extra: ""
+    description: ""
+  - name: city
+    type: varchar(100)
+    nullable: "NO"
+    default: null
+    key: ""
+    extra: ""
+    description: ""
+  - name: state
+    type: varchar(100)
+    nullable: "YES"
+    default: null
+    key: ""
+    extra: ""
+    description: ""
+  - name: country
+    type: varchar(100)
+    nullable: "YES"
+    default: India
+    key: ""
+    extra: ""
+    description: ""
+  - name: postal_code
+    type: varchar(20)
+    nullable: "YES"
+    default: null
+    key: ""
+    extra: ""
+    description: ""
+  - name: address_type
+    type: "enum('Home','Office')"
+    nullable: "YES"
+    default: Home
+    key: ""
+    extra: ""
+    description: ""

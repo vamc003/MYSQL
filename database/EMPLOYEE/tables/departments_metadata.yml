@@ -1,0 +1,38 @@
+table: departments
+description: ""
+columns:
+  - name: department_id
+    type: int
+    nullable: "NO"
+    default: null
+    key: PRI
+    extra: auto_increment
+    description: ""
+  - name: department_name
+    type: varchar(100)
+    nullable: "NO"
+    default: null
+    key: UNI
+    extra: ""
+    description: ""
+  - name: location
+    type: varchar(100)
+    nullable: "YES"
+    default: null
+    key: ""
+    extra: ""
+    description: ""
+  - name: manager_employee_id
+    type: int
+    nullable: "YES"
+    default: null
+    key: ""
+    extra: ""
+    description: ""
+  - name: created_at
+    type: timestamp
+    nullable: "YES"
+    default: CURRENT_TIMESTAMP
+    key: ""
+    extra: DEFAULT_GENERATED
+    description: ""
